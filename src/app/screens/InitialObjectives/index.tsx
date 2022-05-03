@@ -31,21 +31,21 @@ export default function InitialObjectives() {
       />
       </View>
       <Text style={styles.label}>¿Cuál es tu objetivo?</Text>
-      <TouchableOpacity style={styles.containeritems}>
+      <TouchableOpacity style={styles.containeritems} onPress={()=>navigation.navigate(AppRoutes.PersonalData)}>
         <Image source={icon_lose_weight} style={{width:75,height:75,margin:12 }}/>
         <View style={{flexDirection:'column', width: 200, margin:12}}>
           <Text style={{textAlign: 'center',color:'white',fontSize: 16, fontWeight: 'bold'}}>Perder Peso</Text>
           <Text style={{textAlign: 'center',color:'white',fontSize: 14,marginTop: 10}}>Maximiza la perdida de grasa y conserva tu masa muscular</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.containeritems}>
+      <TouchableOpacity style={styles.containeritems} onPress={()=>navigation.navigate(AppRoutes.PersonalData)}>
         <Image source={icon_keep_weight} style={{width:75,height:75,margin:12}}/>
         <View style={{flexDirection:'column', width: 200, margin:12}}>
           <Text style={{textAlign: 'center',color:'white',fontSize: 16, fontWeight: 'bold'}}>Mantener Peso</Text>
           <Text style={{textAlign: 'center',color:'white',fontSize: 14,marginTop: 10}}>Conserva tu estado fisico y mantente saludable</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.containeritems}>
+      <TouchableOpacity style={styles.containeritems} onPress={()=>navigation.navigate(AppRoutes.PersonalData)}>
         <Image source={icon_get_strong} style={{width:75,height:75,margin:12}}/>
         <View style={{flexDirection:'column', width: 200, margin:12}}>
           <Text style={{textAlign: 'center',color:'white',fontSize: 16, fontWeight: 'bold'}}>Ganar Musculo</Text>

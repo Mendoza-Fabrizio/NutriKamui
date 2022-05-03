@@ -11,6 +11,7 @@ import Buttom from '@components/Button/index';
 import loginStyles from './login.styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Header from 'app/components/Header';
+import MainRoute from 'app/router/MainRoute';
 export type LoginNavigationProps = PrincipalNavigationProp<AppRoutes.AuthRoute>;
 export interface LoginScreenProps {
   email: string;
@@ -63,7 +64,7 @@ const LoginScreen: React.FC<LoginScreenProps> = () => {
       />
       <View style={loginStyles.wrapperButtom}>
         <Buttom
-          handleOnPress={() => handleLoginUser(navigation)}
+          handleOnPress={() => navigation.navigate(AppRoutes.MainRoute)}
           label="INICIAR SESIÓN"
           disabled={password.length === 0 || email.length === 0}
         />
