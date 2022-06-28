@@ -11,6 +11,7 @@ import BaseDatos from 'app/screens/BaseDatos';
 import Recetas from 'app/screens/Recetas';
 import Progreso from 'app/screens/Progreso';
 import Teams from 'app/screens/Teams';
+import { icon_cocinando, icon_diario, icon_plan, icon_search, icon_team } from 'modules/resources/images';
 
 export enum MainRoutes {
   Plan = 'Plan',
@@ -52,7 +53,7 @@ const MainRoutesScreen = () => {
           title: 'Plan',
           tabBarLabelStyle: {fontSize: 14},
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="scanner" color={color} size={30} />
+            <Image source = {icon_plan} style={{width:30,height:30}}/>
           ),
         }}
       />
@@ -63,11 +64,7 @@ const MainRoutesScreen = () => {
           title: 'BaseDatos',
           tabBarLabelStyle: {fontSize: 14},
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons
-              name="text-box-search-outline"
-              color={color}
-              size={30}
-            />
+            <Image source = {icon_search} style={{width:30,height:30}}/>
           ),
         }}
       />
@@ -78,7 +75,7 @@ const MainRoutesScreen = () => {
           title: 'Recetas',
           tabBarLabelStyle: {fontSize: 14},
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="account" color={color} size={30} />
+            <Image source = {icon_cocinando} style={{width:30,height:30}}/>
           ),
         }}
       />
@@ -89,7 +86,7 @@ const MainRoutesScreen = () => {
           title: 'Teams',
           tabBarLabelStyle: {fontSize: 14},
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="account" color={color} size={30} />
+            <Image source = {icon_team} style={{width:30,height:30}}/>
           ),
         }}
       />
@@ -100,7 +97,7 @@ const MainRoutesScreen = () => {
           title: 'Progreso',
           tabBarLabelStyle: {fontSize: 14},
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="account" color={color} size={30} />
+            <Image source = {icon_diario} style={{width:30,height:30}}/>
           ),
         }}
       />

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "830226314699",
+    "project_id": "proyectotm-32d7c",
+    "storage_bucket": "proyectotm-32d7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830226314699:android:e3a91d6fa14a9577fc724e",
+        "android_client_info": {
+          "package_name": "com.example.smartreply"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830226314699-33ov2dr8fjhs05s4vdpf255k1e68ouv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUH7iFYAm7xgBsjggD2BzzXihr-DEVnD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830226314699-33ov2dr8fjhs05s4vdpf255k1e68ouv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830226314699:android:43e4768fe8ee3007fc724e",
+        "android_client_info": {
+          "package_name": "com.nutrikamui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830226314699-33ov2dr8fjhs05s4vdpf255k1e68ouv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUH7iFYAm7xgBsjggD2BzzXihr-DEVnD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830226314699-33ov2dr8fjhs05s4vdpf255k1e68ouv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

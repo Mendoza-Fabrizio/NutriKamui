@@ -29,14 +29,14 @@ export default function PersonalData() {
   const [Weight,setWeight] = React.useState([{label:"Seleccionar",value:'Seleccionar'},{label:"Mujer",value:'Mujer'},{label:"Hombre",value:'Hombre'}]);
   const [valueWeight,setValueWeight] = React.useState(null);
   return (
-    <SafeAreaView style={generalStyles.container}>
+    <SafeAreaView style={[generalStyles.container]}>
       <View style={{width: '100%'}}>
       <Header haveReturnBtn={true}      
       />
       </View>
-      <View style={{width: 320}}>
+      <View style={{height:'50%',width: 320,justifyContent:'space-between',flexDirection:'column'}}>
       
-      <Text style={{color:'white',textAlign:'center',fontSize: 20,marginTop:12}}>Sexo</Text>
+      <Text style={{color:'white',textAlign:'center',fontSize: 20}}>Sexo</Text>
       <DropDownPicker
         style={{marginTop: 12}}
         labelStyle={{color:'black',textAlign:'center',fontSize: 20}}
@@ -49,9 +49,9 @@ export default function PersonalData() {
         setValue={setValue}
         setItems={setGnre}
       />
-      <Text style={{color:'white',textAlign:'center',fontSize: 20, marginTop:12}}>Fecha de Nacimiento</Text>
+      <Text style={{color:'white',textAlign:'center',fontSize: 20}}>Fecha de Nacimiento</Text>
       <DropDownPicker
-      style={{marginTop: 12}}
+      style={{}}
         labelStyle={{color:'black',textAlign:'center',fontSize: 20}}
         textStyle={{color:'black'}}
         showArrowIcon={true}
@@ -62,9 +62,9 @@ export default function PersonalData() {
         setValue={setBirthValue}
         setItems={setBirthDate}
       />
-      <Text style={{color:'white',textAlign:'center',fontSize: 20,marginTop:12}}>Estatura</Text>
+      <Text style={{color:'white',textAlign:'center',fontSize: 20}}>Estatura</Text>
       <DropDownPicker
-      style={{marginTop: 12}}
+      style={{}}
         labelStyle={{color:'black',textAlign:'center',fontSize: 20}}
         textStyle={{color:'black'}}
         showArrowIcon={true}
@@ -75,9 +75,9 @@ export default function PersonalData() {
         setValue={setHeightValue}
         setItems={setHeight}
       />
-      <Text style={{color:'white',textAlign:'center',fontSize: 20,marginTop:12}}>Peso Actual</Text>
+      <Text style={{color:'white',textAlign:'center',fontSize: 20}}>Peso Actual</Text>
       <DropDownPicker
-      style={{marginTop: 12}}
+      style={{}}
         labelStyle={{color:'black',textAlign:'center',fontSize: 20}}
         textStyle={{color:'black'}}
         showArrowIcon={true}
@@ -90,7 +90,7 @@ export default function PersonalData() {
       />
       
       </View>
-      <View style={{width: 350,margin:12,marginTop:24}}>
+      <View style={{width: 350}}>
         <Button label="Continuar" handleOnPress={()=>navigation.navigate(AppRoutes.Question1)}/>
       </View>
     </SafeAreaView>

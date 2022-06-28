@@ -20,7 +20,7 @@ export default function MeasureFood() {
       />
       </View>
       <Text style={{color: 'white',fontSize:20,textAlign: 'center'}}>¿Como deseas medir tus porciones de alimentos?</Text>
-      <TouchableOpacity style={styles.containeritems} >
+      <TouchableOpacity style={styles.containeritems} onPress={()=>navigation.navigate(AppRoutes.AuthRoute)}>
         <View style={{alignItems: 'center',flexDirection:'row',marginTop:12}}>
           <Image source={icon_mano} style={{width:55,height:55,tintColor: 'orange'}}/>
           <Image source={icon_puno} style={{width:55,height:55,tintColor: 'orange'}}/>
@@ -30,7 +30,7 @@ export default function MeasureFood() {
         <Text style={{color: 'white',fontSize:20,textAlign: 'center',fontWeight: 'bold'}}>Palmas puños tazas y cdas</Text>
         <Text style={{color: 'white',fontSize:16,textAlign: 'center',marginTop: 12}}>Facil de utilizar u consideran tu tamaño corporal</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.containeritems}>
+      <TouchableOpacity style={styles.containeritems} onPress={()=>navigation.navigate(AppRoutes.AuthRoute)}>
       <View style={{alignItems: 'center',flexDirection:'row',marginTop:12}}>
           <Image source={icon_balance} style={{width:55,height:55,tintColor: 'orange'}}/>
           
