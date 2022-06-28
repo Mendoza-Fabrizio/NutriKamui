@@ -12,6 +12,7 @@ import loginStyles from './login.styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Header from 'app/components/Header';
 import MainRoute from 'app/router/MainRoute';
+import { icon_logo } from 'modules/resources/images';
 export type LoginNavigationProps = PrincipalNavigationProp<AppRoutes.AuthRoute>;
 export interface LoginScreenProps {
   email: string;
@@ -46,8 +47,8 @@ const LoginScreen: React.FC<LoginScreenProps> = () => {
       haveReturnBtn={true}
       />
       </View>
-      <View style={{justifyContent: 'center',width:'100%',height:'100%',alignItems:'center',flex:1,marginTop:100}}>
-      <MaterialCommunityIcons name='weight-lifter' size={90} style={{color:'white'}}/>
+      <View style={{justifyContent: 'space-between',width:'100%',height:'100%',alignItems:'center',flex:1,marginTop:100}}>
+      <Image source={icon_logo} style={{width:90,height:90}}/>
       <InputForm
         label="Correo/Nombre de usuario"
         placeHolder="Ingrese su correo electrónico"

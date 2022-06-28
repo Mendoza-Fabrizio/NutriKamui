@@ -33,6 +33,12 @@ import icon_puno from './puno.png';
 import icon_taza from './taza.png';
 import icon_spoon from './spoon.png';
 import icon_balance from './balance.png'
+import icon_logo from './logo.png'
+import icon_diario from './diario.png'
+import icon_plan from './plan.png'
+import icon_cocinando from './cocinando.png'
+import icon_search from './search.png'
+import icon_team from './team.png'
 export{
   gif_custom_indicator,
   icon_logo_main,
@@ -68,5 +74,11 @@ export{
   icon_puno,
   icon_spoon,
   icon_taza,
-  icon_balance
+  icon_balance,
+  icon_logo,
+  icon_diario,
+  icon_cocinando,
+  icon_plan,
+  icon_search,
+  icon_team
 }
